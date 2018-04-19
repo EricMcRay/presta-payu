@@ -318,6 +318,7 @@ class estPay extends PaymentModule {
             }
             $currencies = Currency::getCurrencies();
             var_dump($currencies);
+            var_dump($this->currencies);
             $authorized_currencies = array_flip(explode(',', $this->currencies));
             $currencies_used = array();
             foreach ($currencies as $key => $currency) {
@@ -325,7 +326,7 @@ class estPay extends PaymentModule {
                     $currencies_used[] = $currencies[$key]; 
                 }
             }
-            $smarty->assign(array('banks' => $this->bankArray, 'currency_default' => new Currency(Configuration::get('PS_CURRENCY_DEFAULT')), 'currencies' => $currencies_used, 'total' => number_format($cart->getOrderTotal(true, 3), 2, '.', ''), 'isoCode' => Language::getIsoById(intval($cookie->id_lang)), 'this_path' => $this->_path, 'this_path_ssl' => (Configuration::get('PS_SSL_ENABLED') ? 'https://' : 'http://') . htmlspecialchars($_SERVER['HTTP_HOST'], ENT_COMPAT, 'UTF-8') . __PS_BASE_URI__ . 'modules/' . $this->name . '/'));
+            $smarty->assign(array('banks' => $this->bankArray, 'currency_default' => new Currency(Configuration::get('PS_CURRENCY_DEFAULT')), 'currencies' => $currencies, 'total' => number_format($cart->getOrderTotal(true, 3), 2, '.', ''), 'isoCode' => Language::getIsoById(intval($cookie->id_lang)), 'this_path' => $this->_path, 'this_path_ssl' => (Configuration::get('PS_SSL_ENABLED') ? 'https://' : 'http://') . htmlspecialchars($_SERVER['HTTP_HOST'], ENT_COMPAT, 'UTF-8') . __PS_BASE_URI__ . 'modules/' . $this->name . '/'));
             return $this->display('index.php', 'payment_execution.tpl');
                 
             }
