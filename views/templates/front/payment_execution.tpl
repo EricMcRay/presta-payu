@@ -251,5 +251,6 @@ Visa/MC secimi<br />
         </p>
 
 </form>
+<p>Testing</p>
 <div style="clear:both;"></div>
 {/if}
