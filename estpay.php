@@ -330,7 +330,10 @@ class estPay extends PaymentModule {
     }
     public function hookPayment($params) {
         global $smarty;
-        $smarty->assign(array('this_path' => $this->_path, 'this_path_ssl' => (Configuration::get('PS_SSL_ENABLED') ? 'https://' : 'http://') . htmlspecialchars($_SERVER['HTTP_HOST'], ENT_COMPAT, 'UTF-8') . __PS_BASE_URI__ . 'modules/' . $this->name . '/'));
+        $smarty->assign(array(
+            'this_path' => $this->_path, 
+            'this_path_ssl' => Tools::getShopDomainSsl(true, true).__PS_BASE_URI__.'modules/'.$this->name.'/'
+        ));
         return $this->display('index.php', 'payment.tpl');
     }
     public function hookdisplayOrderDetail($params) {
