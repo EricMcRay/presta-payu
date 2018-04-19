@@ -1,10 +1,5 @@
-<?php $_PC = 0;
-$_P = explode(',', 'ladolcepassione.com');
-foreach ($_P as $_PD) if (FALSE !== strpos($_SERVER['HTTP_HOST'], trim($_PD))) {
-    $_PC = 1;
-    break;
-}
-if (!$_PC) die('<b>This script has been licensed for usage on ladolcepassione.com and can not be used on ' . $_SERVER['HTTP_HOST'] . '.</b>'); ?><?php
+<?php
+@ini_set('display_errors', 'on');
 class estPay extends PaymentModule {
     private $_html = '';
     private $_postErrors = array();
