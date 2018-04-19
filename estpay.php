@@ -317,7 +317,7 @@ class estPay extends PaymentModule {
                 $this->bankArray = $storedArray;
             }
             $currencies = Currency::getCurrencies();
-            dump($currencies);
+            var_dump($currencies);
             $authorized_currencies = array_flip(explode(',', $this->currencies));
             $currencies_used = array();
             foreach ($currencies as $key => $currency) {
