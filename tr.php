@@ -1,0 +1,53 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{estpay}prestashop>estpay_125396118252e0d2a442e32dafd2bc7b'] = 'Kredi Kartı';
+$_MODULE['<{estpay}prestashop>estpay_5f9a1d83cec773e4faa0e87832fc13aa'] = 'EST altyapısını kullanan bankalar için kredi kartı modülü';
+$_MODULE['<{estpay}prestashop>estpay_5622c2cb90c913c55900c2a43247cd4c'] = 'Gerekli alanlar doldurulmalıdır!';
+$_MODULE['<{estpay}prestashop>estpay_180f0e85dd3029ebb195ed78e91804e4'] = 'en azından bir kur belirlemeniz gerekli.';
+$_MODULE['<{estpay}prestashop>estpay_444bcb3a3fcf8389296c49467f27e1d6'] = 'tamam';
+$_MODULE['<{estpay}prestashop>estpay_c888438d14855d7d96a2724ee9c306bd'] = 'Ayarlar güncellendi';
+$_MODULE['<{estpay}prestashop>estpay_4d99e33e0cfc8cfca786e285f70be1ef'] = 'Geçerli Kurlar';
+$_MODULE['<{estpay}prestashop>estpay_10afaca533a51ff277be7acde5044eed'] = 'Bu ödemede bankanın kabul ettiği kurlar';
+$_MODULE['<{estpay}prestashop>estpay_dfcfc43722eef1eab1e4a12e50a068b1'] = 'Kurlar';
+$_MODULE['<{estpay}prestashop>estpay_b17f3f4dcf653a5776792498a9b44d6a'] = 'Güncelle';
+$_MODULE['<{estpay}prestashop>payment_25065e3ef9274f9b0e3088340f6d79e6'] = 'Kredi kartı ile öde';
+$_MODULE['<{estpay}prestashop>payment_0d39b8a5f2919f54e20596ef3692fbb3'] = 'Kredi kartınız ile ödeme yapmak için lütfen tıklayınız.';
+$_MODULE['<{estpay}prestashop>payment_execution_8219450cd32803474bc64720a4f1adf2'] = 'Taksit seçeneği bulunmuyor';
+$_MODULE['<{estpay}prestashop>payment_execution_7cbb885aa1164b390a0bc050a64e1812'] = 'Ay';
+$_MODULE['<{estpay}prestashop>payment_execution_d6692dd335c3c6b2ad020e2758eed628'] = 'Taksit';
+$_MODULE['<{estpay}prestashop>payment_execution_01b634c03d207b8a91824318c347e899'] = 'Oran:';
+$_MODULE['<{estpay}prestashop>payment_execution_8219450cd32803474bc64720a4f1adf2'] = 'Taksit seçeneği bulunmuyor';
+$_MODULE['<{estpay}prestashop>payment_execution_d58f3c282c3404a4d548292ae9860967'] = 'Ödemeniz başarıyla tamamlandı!';
+$_MODULE['<{estpay}prestashop>payment_execution_88c756208f347ea77dbecb6301d94e09'] = 'Alışverişinizde bizi seçtiğiniz için teşekkür ederiz, siparişinizi hesabım menüsündeki \"siparişlerim\" linkinden takip edebilirsiniz. ';
+$_MODULE['<{estpay}prestashop>payment_execution_21c362331f5f1783e0c5d7ceae8e801a'] = 'Ödemeniz tamamlanamadı!';
+$_MODULE['<{estpay}prestashop>payment_execution_b3204e489bb3f627613f24da102a6ed9'] = 'Lütfen kredi kartı bilgilerinizi kontrol ederek tekrar deneyiniz. Tüm alanları doldurup doldurmadığınızı ve alışveriş için yeterli kart limitiniz olup olmadığını kontrol ediniz.';
+$_MODULE['<{estpay}prestashop>payment_execution_25065e3ef9274f9b0e3088340f6d79e6'] = 'Kredi kartı ile ödeme';
+$_MODULE['<{estpay}prestashop>payment_execution_b4325d214695cb4ecdf2c45c1fc4bc52'] = 'Kart üzerindeki isim:';
+$_MODULE['<{estpay}prestashop>payment_execution_1100ee030335d019d5b7e7ae775d1a8e'] = 'Kart numarası:';
+$_MODULE['<{estpay}prestashop>payment_execution_50e5f47c47a0f5c110ee15a5c018fe05'] = 'Cvv2:';
+$_MODULE['<{estpay}prestashop>payment_execution_addd91cd87ffb844d560724fcb517f2d'] = 'Son kullanma tarihi:';
+$_MODULE['<{estpay}prestashop>payment_execution_86f5978d9b80124f509bdb71786e929e'] = 'Ocak';
+$_MODULE['<{estpay}prestashop>payment_execution_659e59f062c75f81259d22786d6c44aa'] = 'Şubat';
+$_MODULE['<{estpay}prestashop>payment_execution_fa3e5edac607a88d8fd7ecb9d6d67424'] = 'Mart';
+$_MODULE['<{estpay}prestashop>payment_execution_3fcf026bbfffb63fb24b8de9d0446949'] = 'Nisan';
+$_MODULE['<{estpay}prestashop>payment_execution_9fd8e50c165b1efb894c8311879e825d'] = 'Mayıs';
+$_MODULE['<{estpay}prestashop>payment_execution_688937ccaf2a2b0c45a1c9bbba09698d'] = 'Haziran';
+$_MODULE['<{estpay}prestashop>payment_execution_1b539f6f34e8503c97f6d3421346b63c'] = 'Temmuz';
+$_MODULE['<{estpay}prestashop>payment_execution_41ba70891fb6f39327d8ccb9b1dafb84'] = 'Ağustos';
+$_MODULE['<{estpay}prestashop>payment_execution_cc5d90569e1c8313c2b1c2aab1401174'] = 'Eylül';
+$_MODULE['<{estpay}prestashop>payment_execution_eca60ae8611369fe28a02e2ab8c5d12e'] = 'Ekim';
+$_MODULE['<{estpay}prestashop>payment_execution_7e823b37564da492ca1629b4732289a8'] = 'Kasım';
+$_MODULE['<{estpay}prestashop>payment_execution_82331503174acbae012b2004f6431fa5'] = 'Aralık';
+$_MODULE['<{estpay}prestashop>payment_execution_a67fcf4da52e395abed2234c7e10cee2'] = 'Kredi kartı banka bilgisi:';
+$_MODULE['<{estpay}prestashop>payment_execution_7bc873cba11f035df692c3549366c722'] = '-- Seçiniz --';
+$_MODULE['<{estpay}prestashop>payment_execution_4a4b5e98f349edec13f2c4c0a98e4970'] = 'Diğer Bankalar';
+$_MODULE['<{estpay}prestashop>payment_execution_5c3ffc5c71abbfc6a6b16b04ebb5c10a'] = 'Taksit:';
+$_MODULE['<{estpay}prestashop>payment_execution_24384fdb7839e9d00a09bce5eca20593'] = 'Lütfen bir banka seçiniz.';
+$_MODULE['<{estpay}prestashop>payment_execution_b94dee13e1a27aebb260b255e652f14d'] = '\"Ödemeyi Onaylıyorum\" butonuna bastıktan sonra kartınızdan';
+$_MODULE['<{estpay}prestashop>payment_execution_20e37e1cb2dc3458b50eafed655f87ee'] = 'çekilecektir.';
+$_MODULE['<{estpay}prestashop>payment_execution_569fd05bdafa1712c4f6be5b153b8418'] = 'Diğer ödeme seçenekleri';
+$_MODULE['<{estpay}prestashop>payment_execution_46b9e3665f187c739c55983f757ccda0'] = 'Ödemeyi Onaylıyorum';
+
+?>

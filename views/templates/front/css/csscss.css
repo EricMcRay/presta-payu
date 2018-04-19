@@ -1,0 +1,95 @@
+#left_column {display:none}
+#right_column {display:none}
+#center_column{width:96%;}
+.taksit {
+	margin:0px;padding:0px;
+	width:100%;
+	border:1px solid #ffffff;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.taksit table{
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.taksit tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.taksit table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.taksit table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.taksit tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.taksit tr:hover td{
+	
+}
+.taksit tr:nth-child(odd){ background-color:#cccccc; }
+.taksit tr:nth-child(even)    { background-color:#ffffff; }.taksit td{
+	vertical-align:middle;
+	
+	
+	border:1px solid #ffffff;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:6px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.taksit tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.taksit tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.taksit tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.taksit tr:first-child td{
+		background:-o-linear-gradient(bottom, #8fc300 5%, #85b601 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8fc300), color-stop(1, #85b601) );
+	background:-moz-linear-gradient( center top, #8fc300 5%, #85b601 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#8fc300", endColorstr="#85b601");	background: -o-linear-gradient(top,#8fc300,85b601);
+
+	background-color:#8fc300;
+	border:0px solid #ffffff;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:13px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.taksit tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #8fc300 5%, #85b601 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8fc300), color-stop(1, #85b601) );
+	background:-moz-linear-gradient( center top, #8fc300 5%, #85b601 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#8fc300", endColorstr="#85b601");	background: -o-linear-gradient(top,#8fc300,85b601);
+
+	background-color:#8fc300;
+}
+.taksit tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.taksit tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
