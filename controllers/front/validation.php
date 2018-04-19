@@ -256,16 +256,16 @@ class estPayValidationModuleFrontController extends ModuleFrontController {
                             break;
                         }
                         /*echo "HATA: " . $parsedXML->RETURN_MESSAGE . " [" . $parsedXML->RETURN_CODE . "]";*/
-                        Tools::redirectLink($domainurl2 . 'payment?fail=1&amount=' . $totalAmount . '&err=' . $i . $parsedXML->RETURN_MESSAGE);
+                        Tools::redirectLink('/index.php?fc=module&module=estpay&controller=payment?fail=1&amount=' . $totalAmount . '&err=' . $i . $parsedXML->RETURN_MESSAGE);
                     }
                 }
             } else {
                 $hata = "Ltfen Btn Alanlar Doldurunuz";
-                Tools::redirectLink($domainurl2 . 'payment?fail=1&amount=' . $totalAmount . '&err=' . $hata);
+                Tools::redirectLink('/index.php?fc=module&module=estpay&controller=payment?fail=1&amount=' . $totalAmount . '&err=' . $hata);
             }
         } else {
             $hata = "Ltfen Btn Alanlar Doldurunuz";
-            Tools::redirectLink($domainurl2 . 'payment?fail=1&amount=' . $totalAmount . '&err=' . $hata);
+            Tools::redirectLink('/index.php?fc=module&module=estpay&controller=payment?fail=1&amount=' . $totalAmount . '&err=' . $hata);
         }
     }
 }
