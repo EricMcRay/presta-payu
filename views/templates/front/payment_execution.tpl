@@ -7,24 +7,24 @@
 <link media="all" type="text/css" href="{$this_path}css/csscss.css" rel="stylesheet">
 <script>
 	var dues = new Array();
-	dues[9999] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[0] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[1] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[2] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[3] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[4] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[5] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[6] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[7] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[8] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[9] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[10] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[11] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[12] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[13] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[14] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[15] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
-	dues[16] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.1.name}';
+	dues[9999] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[0] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[1] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[2] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[3] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[4] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[5] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[6] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[7] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[8] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[9] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[10] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[11] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[12] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[13] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[14] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[15] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
+	dues[16] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
 	{section name=bb loop=$banks}
 	
 	              {if $group.name|escape:'htmlall':'UTF-8'|substr:0:3 == "sag"}<label for="group_{$id_attribute_group|intval}">{$group.name|escape:'htmlall':'UTF-8'|substr:3:10} :</label>{/if}
