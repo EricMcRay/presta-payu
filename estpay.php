@@ -412,7 +412,7 @@ class estPay extends PaymentModule {
 		}
 		else
 			$this->smarty->assign('status', 'failed');
-		return $this->display('index . php', 'payment_return . tpl');
+		return $this->display('index.php', 'payment_return.tpl');
 	}
 
 }
