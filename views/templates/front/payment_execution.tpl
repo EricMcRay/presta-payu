@@ -101,7 +101,7 @@ $(document).ready(function() {
 {/if}
 
 <form action="{$link->getModuleLink('estpay', 'validation', [], true)|escape:'html'}" method="post">
-<div id="step_1" style="background-color:#8FC300; width:99%;  padding: 5px; margin-top: 10px; margin-bottom: 10px; text-align: left; display: block; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 12px; border: 1px solid #fff; color: #fff;"><b>1. ADIM - KART T&#304;P&#304;</b><br />
+<div id="step_1" style="background-color:#8FC300; width:99%;  padding: 5px; margin-top: 10px; margin-bottom: 10px; text-align: left; display: block; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 12px; border: 1px solid #fff; color: #fff;"><b>1. ADIM - KART TİPİ</b><br />
 
 <div style="float:left; width: 100%; height: auto; padding:5px; margin-top: 10px; margin-bottom: 10px; text-align: left; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 12px; border: 1px solid #ccc; color: #666; margin-left:-6px">
 
