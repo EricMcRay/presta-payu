@@ -1,5 +1,6 @@
 <?php
 @ini_set('display_errors', 'on');
+
 class estPay extends PaymentModule {
     private $_html = '';
     private $_postErrors = array();
@@ -324,12 +325,11 @@ class estPay extends PaymentModule {
         
     }
     public function hookPayment($params) {
-        global $smarty;
-        $smarty->assign(array(
+        $this->context->$smarty->assign(array(
 			'this_path' => $this->_path,
             'this_path_ssl' => Tools::getShopDomainSsl(true, true).__PS_BASE_URI__.'modules/'.$this->name.'/'
         ));
-        return $this->display('index.php', 'payment.tpl');
+        return $this->display(__FILE__, 'payment.tpl');
     }
     public function hookdisplayOrderDetail($params) {
         $smarty = $this->smarty->smarty;
