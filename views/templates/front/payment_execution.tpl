@@ -25,11 +25,7 @@
 	dues[14] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
 	dues[15] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
 	dues[16] = '<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {$total} {$currencies.0.name}';
-	{section name=bb loop=$banks}
-	
-	              {if $group.name|escape:'htmlall':'UTF-8'|substr:0:3 == "sag"}<label for="group_{$id_attribute_group|intval}">{$group.name|escape:'htmlall':'UTF-8'|substr:3:10} :</label>{/if}
-				  
-				  
+	{section name=bb loop=$banks}				  
 		dues[{$smarty.section.bb.index}] = '<table border="0" width = "500px" cellpadding="5" cellspacing="5" ><tr><td></td><td><b>Taksit Sayısı</b><br /></td><td><b>Vade Oranı</b><br /></td><td><b>Toplam Tutar</b><br /></td></tr>{foreach key=due item=rate from=$banks[bb].DUES}<tr><td><input type="radio"  name="due" value="{$due}" ></td><td>{if $due == 1 }Tek &Ccedil;ekim{else} {$due} {/if}  </td><td>{l s='rate:' mod='estpay'} %{$rate} </td> <td>Toplam: {math equation="(total+(total*(rate/100)))" total=$total rate=$rate  format="%.2f"} </td></tr>{foreachelse}<input type="radio" name="due" value="" />{l s='No dues' mod='estpay'} {math equation="($total*1)"  format="%.2f"} {/foreach}</table>';
 	{/section}
 </script>
