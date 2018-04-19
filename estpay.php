@@ -325,7 +325,8 @@ class estPay extends PaymentModule {
         
     }
     public function hookPayment($params) {
-        $this->context->$smarty->assign(array(
+        global $smarty;
+        $smarty->assign(array(
 			'this_path' => $this->_path,
             'this_path_ssl' => Tools::getShopDomainSsl(true, true).__PS_BASE_URI__.'modules/'.$this->name.'/'
         ));
