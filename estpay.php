@@ -1,5 +1,4 @@
 <?php
-@ini_set('display_errors', 'on');
 
 class estPay extends PaymentModule {
     private $_html = '';
