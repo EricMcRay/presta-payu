@@ -324,7 +324,6 @@ class estPay extends PaymentModule {
                     $currencies_used[] = $currencies[$key]; 
                 }
             }
-            var_dump($this->bankArray);
             $smarty->assign(array('banks' => $this->bankArray, 'currency_default' => new Currency(Configuration::get('PS_CURRENCY_DEFAULT')), 'currencies' => $currencies, 'total' => number_format($cart->getOrderTotal(true, 3), 2, '.', ''), 'isoCode' => Language::getIsoById(intval($cookie->id_lang)), 'this_path' => $this->_path, 'this_path_ssl' => (Configuration::get('PS_SSL_ENABLED') ? 'https://' : 'http://') . htmlspecialchars($_SERVER['HTTP_HOST'], ENT_COMPAT, 'UTF-8') . __PS_BASE_URI__ . 'modules/' . $this->name . '/'));
             return $this->display('index.php', 'payment_execution.tpl');
                 
