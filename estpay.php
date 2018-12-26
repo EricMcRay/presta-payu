@@ -62,7 +62,7 @@ class estPay extends PaymentModule {
                     eval($evalMyArray);
                     $this->bankArray = $storedArray;
                 }
-                if ($_POST["editBank"]) {
+                if (isset($_POST["editBank"])) {
                     $i = 0;
                     $retMe = 'array(';
                     foreach ($this->bankArray as $bankId => $bankData) {
@@ -102,7 +102,7 @@ class estPay extends PaymentModule {
                     }
                     $retMe.= ');';
                 }
-                if ($_POST["addBank"]) {
+                if (isset($_POST["addBank"])) {
                     $i = 0;
                     $retMe = 'array(';
                     if (is_array($this->bankArray)) {
